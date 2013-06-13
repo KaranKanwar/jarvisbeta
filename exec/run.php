@@ -9,12 +9,18 @@ $contextlevel = $_GET['ctlvl'];
 $command = strtolower($commandi);
 $multi = 0;
 $mood = 0;
+$gender = $_GET[gender];
+if($_GET[gender]="f"){
+    define("address", "mam");
+}else{
+    define("address", "sir");
+}
 
 /* Jarvis Fun! */
 if (strpos($command,'hello') !== false || strpos($command,'hey') !== false || strpos($command,'hi') !== false) {
     $return = array(
-"Hello sir. Do you need anything?",
-"Hello sir. May I be of any use?",
+"Hello ". address . ". Do you need anything?",
+"Hello ". address . ". May I be of any use?",
 "Hello sir. Whats up?",
 "Hello sir. It is a wonderful day today!",
 "Hello sir. Do you need anything?"
@@ -151,7 +157,7 @@ if ($command=="rick roll") {
 }
 /* Error Case */
 if($m==""){
-$return = "I did not understand";
+$return = "I did not understand," . address ".";
 $extra = "what you meant by '".$command."'<br><br><a target='_blank' href='http://google.com/search?q=".$command."'>Let me help you</a> or <a target='_blank' href='http://tomedu.org/jarvis/commands.html'>view commands</a>";
 }
 
