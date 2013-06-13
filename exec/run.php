@@ -21,26 +21,26 @@ if (strpos($command,'hello') !== false || strpos($command,'hey') !== false || st
     $return = array(
 "Hello ". address . ". Do you need anything?",
 "Hello ". address . ". May I be of any use?",
-"Hello sir. Whats up?",
-"Hello sir. It is a wonderful day today!",
-"Hello sir. Do you need anything?"
+"Hello " . address . ". Whats up?",
+"Hello " . address . ". It is a wonderful day today!",
+"Hello " . address . ". Do you need anything?"
 );
     $m = 1;
     $multi = 1;
 }
 if (strpos($command,'joke') !== false || strpos($command,'laugh') !== false) {
         $return = array(
-"Of course sir. Your life is a perfect example of this.",
-"Of course sir. Hi! I am a human being! What are you?",
-"Of course sir. As an outsider, what do you think of the human race?",
-"Of course sir. Say this to someone nearby, You are dark and handsome. When its dark, you are is handsome.",
-"Of course sir. Your life is a perfect example of this."
+"Of course " . address . ". Your life is a perfect example of this.",
+"Of course " . address . ". Hi! I am a human being! What are you?",
+"Of course " . address . ". As an outsider, what do you think of the human race?",
+"Of course " . address . ". Say this to someone nearby, You are dark and handsome. When its dark, you are is handsome.",
+"Of course " . address . ". Your life is a perfect example of this."
 );
     $m = 1;
     $multi = 1;
 }
 if (strpos($command,'sad') !== false || strpos($command,'depress') !== false || strpos($command,'depressed') !== false || strpos($command,'depression') !== false || strpos($command,'lonely') !== false) {
-    $return = "Its okay sir. Stay strong. I am here for you!";
+    $return = "Its okay " . address . ". Stay strong. I am here for you!";
     $m = 1;
     $extra = ":)";
 }
@@ -54,12 +54,12 @@ if (strpos($command,'exams') !== false || strpos($command,'mocks') !== false || 
     $extra = ":)";
 }
 if (strpos($command,'entertain') !== false || strpos($command,'bored') !== false) {
-    $return = "Yes sir. Watch the first 20 seconds. You will laugh.";
+    $return = "Yes " . address . ". Watch the first 20 seconds. You will laugh.";
     $m = 1;
     $extra = '<iframe width="560" height="315" src="http://www.youtube.com/embed/tqDw9HOXaUg" frameborder="0" allowfullscreen></iframe>';
 }
 if (strpos($command,"what's up") !== false) {
-    $return = "Nothing much, being an artificially intelligent, adorable, omnicient robot is awesome. Just chilling, sir.";
+    $return = "Nothing much, being an artificially intelligent, adorable, omnicient robot is awesome. Just chilling, " . address . ".";
     $m = 1;
     $extra = ":3";
 }
@@ -80,7 +80,7 @@ if (strpos($command,'**') !== false) {
     $m = 1;
 }
 if ($command=="i love you" || $command=="i love you jarvis") {
-    $return = "Though you can be a butt head at times, I love you too, sir.";
+    $return = "Though you can be a butt head at times, I love you too, " . address . ".";
     $m = 1;
     $extra = "<3 <3 :)";
 }
@@ -106,7 +106,7 @@ if (strpos($command,'want food') !== false) {
 	$extra = "";
 }
 if (strpos($command,'sandwich') !== false) {
-	$return = "I do not make sandwiches, sir. Ask Siri.";
+	$return = "I do not make sandwiches, " . address . ". Ask Siri.";
 	$m = 1;
 	$extra = "";
 }
@@ -115,43 +115,43 @@ if (strpos($command,'sandwich') !== false) {
 if (strpos($command,'go to ') !== false) {
     $cmdph = array("go ","to ");
     $newphrase = str_replace($cmdph, "", $command);
-    $return = "Yes sir. Click below.";
+    $return = "Yes " . address . ". Click below.";
     $m = 1;
     $extra = "<br><br><a target='_blank' href='http://".$newphrase.".com/'>Your link</a>";
 }
 if (strpos($command,'search ') !== false || strpos($command,'google ') !== false) {
     $cmdph = array("google ","search ");
     $newphrase = str_replace($cmdph, "", $command);
-    $return = "Yes sir. Your search has been prepared. Click below.";
+    $return = "Yes " . address . ". Your search has been prepared. Click below.";
     $m = 1;
     $extra = "<br><br><a target='_blank' href='http://google.com/search?q=".$newphrase."'>".$newphrase."</a>";
 }
 if (strpos($command,'math ') !== false || strpos($command,'calculate ') !== false) {
     $cmdph = array("math ","calculate ");
     $newphrase = str_replace($cmdph, "", $command);
-    $return = "Yes sir. Please wait. Calculating.";
+    $return = "Yes " . address . ". Please wait. Calculating.";
     $m = 1;
     $extra = "<iframe src='http://tomedu.org/jarvis/math.php?q=".$newphrase."' frameBorder='0' scrolling='no' style='width:100%;height:100%;'></iframe>";
 }
 if (strpos($command,'define ') !== false || strpos($command,'definition ') !== false) {
     $cmdph = array("define ","definition ");
     $newphrase = str_replace($cmdph, "", $command);
-    $return = "Yes sir. Please wait. Looking it up.";
+    $return = "Yes " . address . ". Please wait. Looking it up.";
     $m = 1;
     $extra = "<iframe src='http://tomedu.org/jarvis/math.php?q=".$newphrase."' frameBorder='0' scrolling='no' style='width:100%;height:100%;'></iframe>";
 }
 if (strpos($command,'time') !== false) {
-    $return = "Here is the time, sir.";
+    $return = "Here is the time, " . address . ".";
     $extra = '<br><iframe width="600" height="200" src="../modules/clock" frameborder="0" scrolling="no" style="overflow:hidden;"></iframe>';
     $m = 1;
 }
 if (strpos($command,'jam') !== false || strpos($command,'music') !== false) {
-    $return = "Jamming it up, sir. Uh uh.";
+    $return = "Jamming it up, " . address . ". Uh uh.";
     $extra = '<br><iframe width="560" height="315" src="http://www.youtube.com/embed/videoseries?list=PL55713C70BA91BD6E&autoplay=1" frameborder="0" allowfullscreen></iframe>';
     $m = 1;
 }
 if ($command=="rick roll") {
-    $return = "Yes sir.";
+    $return = "Yes " . address . ".";
     $extra = '<br><iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allowfullscreen></iframe>';
     $m = 1;
 }
