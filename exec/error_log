@@ -1,0 +1,9 @@
+[16-May-2013 20:06:05 UTC] PHP Parse error:  syntax error, unexpected T_BOOLEAN_OR in /home/txclanco/public_html/glorbi.com/tomedu/jarvis/exec/run.php on line 9
+[16-May-2013 20:10:37 UTC] PHP Parse error:  syntax error, unexpected T_BOOLEAN_OR in /home/txclanco/public_html/glorbi.com/tomedu/jarvis/exec/run.php on line 8
+[16-May-2013 20:10:39 UTC] PHP Parse error:  syntax error, unexpected T_BOOLEAN_OR in /home/txclanco/public_html/glorbi.com/tomedu/jarvis/exec/run.php on line 8
+[16-May-2013 20:11:10 UTC] PHP Parse error:  syntax error, unexpected T_BOOLEAN_OR in /home/txclanco/public_html/glorbi.com/tomedu/jarvis/exec/run.php on line 8
+[16-May-2013 20:42:31 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/txclanco/public_html/glorbi.com/tomedu/jarvis/exec/run.php on line 46
+[16-May-2013 20:42:56 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/txclanco/public_html/glorbi.com/tomedu/jarvis/exec/run.php on line 46
+[16-May-2013 20:45:17 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/txclanco/public_html/glorbi.com/tomedu/jarvis/exec/run.php on line 48
+[09-Jun-2013 12:42:29 UTC] PHP Parse error:  syntax error, unexpected T_IS_NOT_IDENTICAL in /home/txclanco/public_html/glorbi.com/tomedu/jarvisbeta/exec/run.php on line 40
+[09-Jun-2013 13:02:27 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/txclanco/public_html/glorbi.com/tomedu/jarvisbeta/exec/run.php on line 2
